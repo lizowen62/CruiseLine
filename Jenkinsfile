@@ -15,6 +15,12 @@ pipeline {
       steps {
          bat 'npm run ng -- build --prod'
       }
-    }     
+    }
+
+    stage('deploy') {
+      steps {
+         bat 'move /dist/cruise-line/* /wamp64/www/'
+      }
+    }       
   }
 }
