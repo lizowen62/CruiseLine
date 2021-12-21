@@ -19,7 +19,7 @@ pipeline {
 
     stage('deploy') {
       steps {
-         bat 'move /dist/line-cruise/* /var/www/html'
+         bat 'move /dist/cruise-line/* /var/www/html'
       }
     }       
   }
