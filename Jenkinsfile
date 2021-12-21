@@ -19,7 +19,7 @@ pipeline {
 
     stage('deploy') {
       steps {
-         bat 'mv /dist/cruise-line/* ../../../../../../../../wamp64/www/'
+         bat 'mv dist/cruise-line/* C:/wamp64/www/'
       }
     }       
   }
